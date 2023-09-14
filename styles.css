@@ -1,0 +1,152 @@
+:root {
+  --main-pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+  --main-font-size: 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.hero {
+  background-image: url(/images/bg-hero-desktop.svg);
+  background-position:center;
+  background-size:cover;
+  background-attachment: scroll;
+  background-color: #edfbfe;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 85px;
+  padding-right: 6%;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.hero nav .try {
+  background-color: white;
+  color: var(--very-dark-cyan);
+  width: 12.6rem;
+  height: 3.1rem;
+  border-radius: 60px;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.1);
+}
+
+.hero nav .try:hover {
+  cursor: pointer;
+}
+
+.hero nav .try:active {
+  background-color: white;
+  color: #c7c7c7;
+  width: 12.5rem;
+  height: 3rem;
+  border-radius: 60px;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.1);
+}
+
+
+.hero .home {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 5.5% ;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .home .home-content {
+  margin-right:80px;
+  max-width: 630px;
+}
+
+.hero .home .home-content h1 {
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--very-dark-cyan);
+  font-weight: 600;
+}
+
+.hero .home .home-content p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 40px 0 30px;
+  color: #45575b;
+}
+
+.hero .home .home-content button {
+  width: 18rem;
+  height: 3.8rem;
+  border-radius: 50px;
+  border-color: transparent;
+  background-color: var(--main-pink);
+  color: #f0f0f0;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.1);
+
+}
+
+.hero .home .home-content button:hover {
+  cursor: pointer;
+}
+
+.hero .home .home-content button:active {
+  background-color: hsl(322, 100%, 80%);
+  color: #edeaea;
+  box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.1);
+}
+
+/* Card Form */
+
+.card {
+  background-color: #45575b;
+  max-width: 100%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.card .card-form1 {
+  flex: 0 0 50%;
+  position: relative;
+  background-color: brown;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-image1 {
+  display: block;
+  width: 50%;
+}
+
+.card .card-form1 .card-content1 {
+  flex: 1;
+  padding: 35px 35px 25px 35px;
+}
